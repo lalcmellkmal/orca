@@ -45,7 +45,7 @@ def A_in_order_to_B(A, B):
 
 def devastation_by(group):
     desc = choice(['tear across', 'rip across', 'tear up', 'rip up', 'destroy'])
-    return [desc, choice(['the landscape', 'cities', 'roads', 'fields'])]
+    return [desc, choice(['the landscape', 'cities', 'infrastructure', 'fields'])]
 
 def ITS_HAPPENING():
     instigator = choice(actors)
