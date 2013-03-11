@@ -1,4 +1,5 @@
-var connect = require('connect'),
+var config = require('./config'),
+    connect = require('connect'),
     exec = require('child_process').exec;
 
 const HEAD = '<!doctype html>\n<meta charset=utf8>\n<title>O.R.C.A.</title>\n<link rel=stylesheet href=v1.css>\n';
@@ -30,4 +31,4 @@ app.use(function (req, resp, next) {
 });
 
 app.use(connect.static('pub'));
-app.listen(8000);
+app.listen(config.PORT, '127.0.0.1');
