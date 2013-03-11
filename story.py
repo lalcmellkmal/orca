@@ -6,7 +6,7 @@ from collections import Iterable
 Whales vomit sharks which leave the ocean to form sharknadoes which tear across the landscape and the sharks vomit dolphins that fly around and rape people, and the rape causes those people to vomit bees
 """
 
-actors = ['whales', 'sharks', 'dolphins', 'bees', 'people']
+actors = ['whales', 'sharks', 'dolphins', 'bees', 'bears', 'people']
 
 def As_that_TV_B(As, TV, B):
     return [As, 'that', TV, B]
@@ -26,6 +26,8 @@ def burst_out_action(victim):
         return exit('the ocean')
     if victim == 'people':
         return 'get in airplanes and fly away'
+    if victim == 'bears':
+        return exit('the wilderness')
     return 'explode outward'
 
 def form_chimeras(species):
@@ -55,7 +57,7 @@ def ITS_HAPPENING():
     collateral = Os_which_then_B(mutants, damage)
     andThen = A_in_order_to_B(gtfo, collateral)
 
-    accost = choice(['rape', 'savage', 'conquer'])
+    accost = choice(['rape', 'savage', 'conquer', 'maul'])
     if instigator == victim:
         victim = ['more', victim]
     instigate = [instigator, accost, victim]
